@@ -10,7 +10,8 @@ namespace AddToAD
     {
         static void Main(string[] args)
         {   
-            Employee.EmployeeInfo Danny2 = new Employee.EmployeeInfo { FirstName = "Danny", LastName = "Test", PhoneNumber = 5423425897 };
+            Employee.EmployeeInfo User = new Employee.EmployeeInfo { FirstName = "Test", LastName = "Test" };
+            ActiveDirectoryAdd.CreateADUser(User.FirstName, User.LastName);
         }
     }
 }
